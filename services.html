@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>samsung Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      font-family: 'Ysabeau SC', sans-serif;
+      font-size: larger;
+    }
+
+    header {
+      background-color: #620505;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 30px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding-left: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: rgba(181, 96, 214, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+    }
+
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .service-box {
+      flex: 1;
+      max-width: 300px;
+      padding: 20px;
+      background-color: #f0b1f3;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .service-image {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .service-description {
+      margin-top: 10px;
+    }
+
+    .service-button {
+      background-color: #333;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .services-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service-box {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="ourteam.html">Our Team</a>
+        <a href="service.html">Services</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-btn">Search</button>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <h1 id="heading1">Our Services</h1>
+    <div class="services-container">
+      <div class="service-box">
+        <h2>Electronics and Technology</h2>
+        <img class="service-image" src="Samsung-wins_1.jpg" alt="Electronics">
+        <p class="service-description">Samsung is renowned for its electronic and technology products, including smartphones, tablets, laptops, TVs, home appliances, and more.</p>
+        <button class="service-button">Learn More</button>
+      </div>
+      <div class="service-box">
+        <h2>Semiconductors and Components</h2>
+        <img class="service-image" src="1620631117690146.jpg" alt="Semiconductors">
+        <p class="service-description">Samsung is also a major player in the semiconductor industry, manufacturing memory chips, NAND flash, and other components that are used in various electronic devices.</p>
+        <button class="service-button">Learn More</button>
+      </div>
+      <div class="service-box">
+        <h2>Digital Displays and Imaging</h2>
+        <img class="service-image" src="Samsung-Display-Tech-Summit-2022-2-847x563.jpg" alt="Digital Display">
+        <p class="service-description"> Samsung is a leading manufacturer of display panels, including LCD, OLED, and QLED panels.</p>
+        <button class="service-button">Learn More</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
